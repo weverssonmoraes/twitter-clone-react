@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Container, Tabs, Tweets, Tweet } from './styled';
+import TweetPage from '../TweetPage';
+
+import { Container, Tabs, Tweets } from './styled';
 
 const Feed: React.FC = () => {
   return (
@@ -8,11 +10,11 @@ const Feed: React.FC = () => {
       <Tabs>Tweets</Tabs>
 
       <Tweets>
-        <Tweet />
-        <Tweet />
-        <Tweet />
-        <Tweet />
-        <Tweet />
+        <TweetPage />
+        <TweetPage />
+        <TweetPage />
+        <TweetPage />
+        <TweetPage />
       </Tweets>
     </Container>
   );

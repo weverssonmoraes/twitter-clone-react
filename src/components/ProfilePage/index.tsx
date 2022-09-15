@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { 
   Container, 
   Banner,
   Avatar,
   ProfileData,
+  CheckIcon,
   LocationIcon,
   CakeIcon,
   CalendarIcon,
@@ -24,10 +24,10 @@ const ProfilePage: React.FC = () => {
       <ProfileData>
         <EditButton outlined>Editar Perfil</EditButton>
 
-        <h1>Weversson Moraes</h1>
+        <h1>Weversson Moraes<CheckIcon /></h1> 
         <h2>@weversson_moraes</h2>
 
-        <p>Developer at <a href="#">@Weversson</a></p>
+        <p>Desenvolvido por <a href="#">@Weversson</a></p>
 
         <ul>
           <li>

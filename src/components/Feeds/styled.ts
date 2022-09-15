@@ -16,10 +16,17 @@ export const Tabs = styled.div `
   cursor: pointer;
   border-radius: 1px;
   border-bottom: 2px solid var(--twitter);
+
+  &:hover {
+    background-color: var(--twitter-dark-hover);
+  }
 `;
 
 export const Tweets = styled.div`
+  display: flex;
+  flex-direction: column;
 
+  flex-shrink: 0;
 `
 export const Tweet = styled.div`
 

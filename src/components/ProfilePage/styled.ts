@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import Button from '../Button'
 import Feeds from '../Feeds'
-import { LocationOn, Cake, Calendar } from '../../styles/icons'
+import { LocationOn, Cake, Calendar, BadgeCheck } from '../../styles/icons'
 
 export const Container = styled.div`
   display: flex;
@@ -15,12 +15,11 @@ export const Container = styled.div`
   }
 `
 export const Banner = styled.div`
+  background: url("../public/Landscape-Color.jpg");
+  background-size: cover;
   flex-shrink: 0;
   width: 100%;
   height: min(33vw, 199px);
-
-  background: var(--twitter);
-
   position: relative;
 `
 export const Avatar = styled.div`
@@ -28,7 +27,8 @@ export const Avatar = styled.div`
   height: max(45px, min(135px, 22vw));
   
   border: 3.75px solid var(--primary);
-  background: var(--gray);
+  background: url('../public/mulher.jpg');
+  background-size: cover;
   border-radius: 50%;
 
   position: absolute;
@@ -44,6 +44,7 @@ export const ProfileData = styled.div`
   position: relative;
 
   > h1 {
+    font-weight: 800;
     font-size: 19px;
   }
 
@@ -75,6 +76,12 @@ export const ProfileData = styled.div`
     }
   }
 `
+
+export const CheckIcon = styled(BadgeCheck)`
+  width: 25px;
+  height: 25px;
+  fill: var(--white);
+`;
 
 const iconCSS = css`
   width: 20px;
